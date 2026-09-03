@@ -1,2 +1,5 @@
 .DS_Store
 *.zip
+
+# Chrome Web Store artifacts
+*.zip
