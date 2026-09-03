@@ -1,0 +1,76 @@
+/* Tokens lifted from the Vortex web app: zinc scale on near-black, blue-600
+   accent, so the panel and the app read as one product. */
+:root {
+  --bg: #09090b;          /* zinc-950 */
+  --panel: #18181b;       /* zinc-900 */
+  --surface: #27272a;     /* zinc-800 */
+  --fg: #fafafa;
+  --muted: #a1a1aa;       /* zinc-400 */
+  --dim: #71717a;         /* zinc-500 */
+  --line: #27272a;        /* zinc-800 */
+  --line-soft: rgba(63, 63, 70, 0.5);
+  --hover: #1f1f23;
+  --accent: #2563eb;      /* blue-600 */
+  --accent-hover: #1d4ed8;
+  --accent-ring: rgba(59, 130, 246, 0.5);
+  --ok: #22c55e;
+  --bad: #f87171;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 13px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+}
+h1 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 700;
+  background: linear-gradient(to right, #60a5fa, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+a { color: var(--muted); }
+.muted { color: var(--muted); }
+.dim { color: var(--dim); }
+.head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+  flex: none;
+}
+.pad { padding: 14px; }
+button, select, input, textarea {
+  font: inherit;
+  color: var(--fg);
+  background: var(--surface);
+  border: 1px solid #3f3f46;
+  border-radius: 12px;
+  padding: 8px 12px;
+  outline: none;
+  width: 100%;
+}
+button { cursor: pointer; }
+button:hover:not(:disabled) { background: var(--hover); }
+button:disabled { opacity: 0.5; cursor: default; }
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 500;
+}
+button.primary:hover:not(:disabled) { background: var(--accent-hover); border-color: var(--accent-hover); }
+input:focus, select:focus, textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px var(--accent-ring);
+}
+.status { font-size: 12px; min-height: 17px; }
+.status.ok { color: var(--ok); }
+.status.bad { color: var(--bad); }
+.tiny { font-size: 11px; }
