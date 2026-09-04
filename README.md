@@ -45,6 +45,15 @@ so it appears in your chat history there.
 - **Zero configuration** — The instance URL ships in the manifest, so host permission is granted at install. Your existing Supabase session cookie does the rest.
 - **Login gate** — Logged out? The panel says so and offers a button, then re-checks by itself when you return to it. Logging in from any tab is enough.
 - **Readable failures** — Every error state maps to something actionable rather than a stack trace: `NOT_LOGGED_IN`, `RATE_LIMIT`, `UNREACHABLE`, `FORBIDDEN`.
+## Preview
+
+### Side Panel
+
+![Vortex Search Side Panel](screenshots/side-panel.png)
+
+### Knowledge Base Switcher
+
+![Knowledge Base Switcher](screenshots/knowledge-base-switcher.png)
 
 ## Install
 
